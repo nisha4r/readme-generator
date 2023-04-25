@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
     const markdownResponse = createMarkDown(data);
     fs.writeToFile(fileName, data, function (err) {
         if (err) {
-            cpnsole.log(err)
+            console.log(err)
 
         }
         console.log("generated READNE file succesfully");
