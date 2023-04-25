@@ -29,7 +29,7 @@ const questions = [
     {
         type: "input",
         message: "Describe usage of this repository",
-        name: "usage-info"
+        name: "usage"
     },
     {
         type: "input",
@@ -51,7 +51,7 @@ const questions = [
     {
         type: "input",
         message: "Enter your firstname and lastname",
-        name: "fname-lname"
+        name: "fnamelname"
     },
 
 
