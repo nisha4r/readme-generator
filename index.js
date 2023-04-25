@@ -11,62 +11,58 @@ const questions = [
     {
         type: "input",
         message: "Describe title of the project",
-        name:"title"
+        name: "title"
     },
-    
-    
+
+
     {
         type: "input",
         message: "Please enter brief description about this project",
-        name:"description"
+        name: "description"
     },
     {
         type: "input",
-        message: "",
-        name:"install"
+        message: "Describe install instruction for this project",
+        name: "install"
     },
     {
         type: "input",
-        message: "",
-        name:"usage-info"
+        message: "Describe usage of this repository",
+        name: "usage-info"
     },
     {
         type: "input",
-        message: "",
-        name:"contribution"
+        message: "Contribution to this project",
+        name: "contribution"
     },
     {
         type: "input",
-        message: "",
-        name:"tests"
+        message: "Instruction to run the tests",
+        name: "tests"
     },
     {
-        type: "input",
-        message: "",
-        name:""
+        type: "list",
+        message: "License of this project belongs to",
+        choice: ["None", "Apache", "MIT License"]
     },
-    {
-        type: "input",
-        message: "",
-        name:""
-    },
+
     {
         type: "input",
         message: "Please enter your GitHub Username",
-        name:"username"
+        name: "username"
     },
     {
         type: "input",
-        message:  "Please enter your email id",
-        name:"email"
+        message: "Please enter your email id",
+        name: "email"
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();
