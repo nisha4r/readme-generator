@@ -2,6 +2,7 @@
 const markdown = require("./createmarkdown");
 const fs = require("fs");
 const inquirer = require("inquirer");
+const createMarkDown = require("./createmarkdown");
 
 
 
@@ -59,7 +60,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    const markdownResponse = createMarkDown(data);
+    fs.writeToFile(fileName, data, function (err) {
+        if (err) {
+            cpnsole.log(err)
+
+        }
+        console.log("generated READNE file succesfully");
+
+    });
+}
 
 // TODO: Create a function to initialize app
 function init() { }
