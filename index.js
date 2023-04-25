@@ -63,9 +63,9 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     const markdownResponse = createMarkDown(data);
-    fs.writeFile(fileName, data, function (err) {
+    fs.writeFile(fileName, markdownResponse, function (err) {
         if (err) {
-            console.log(err)
+            return console.log(err);
 
         }
         console.log("generated READNE file succesfully");
