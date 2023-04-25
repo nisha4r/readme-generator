@@ -7,10 +7,38 @@ const inquirer = require("inquirer");
 
 // An array of questions for user input
 const questions = [
+
+    {
+        type: "input",
+        message: "Describe title of the project",
+        name:"title"
+    },
+    
+    
+    {
+        type: "input",
+        message: "Please enter brief description about this project",
+        name:"description"
+    },
     {
         type: "input",
         message: "",
-        name:""
+        name:"install"
+    },
+    {
+        type: "input",
+        message: "",
+        name:"usage-info"
+    },
+    {
+        type: "input",
+        message: "",
+        name:"contribution"
+    },
+    {
+        type: "input",
+        message: "",
+        name:"tests"
     },
     {
         type: "input",
@@ -24,33 +52,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "",
-        name:""
+        message: "Please enter your GitHub Username",
+        name:"username"
     },
     {
         type: "input",
-        message: "",
-        name:""
-    },
-    {
-        type: "input",
-        message: "",
-        name:""
-    },
-    {
-        type: "input",
-        message: "",
-        name:""
-    },
-    {
-        type: "input",
-        message: "",
-        name:""
-    },
-    {
-        type: "input",
-        message: "",
-        name:""
+        message:  "Please enter your email id",
+        name:"email"
     }
 ];
 
