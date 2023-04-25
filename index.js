@@ -50,6 +50,13 @@ const questions = [
 
     {
         type: "input",
+        message: "Enter your firstname and lastname",
+        name: "fname-lname"
+    },
+
+
+    {
+        type: "input",
         message: "Please enter your GitHub Username",
         name: "username"
     },
